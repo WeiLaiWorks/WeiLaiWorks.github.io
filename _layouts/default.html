@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html xmlns:wb="http://open.weibo.com/wb"  lang="en-us">
 
   {% include head.html %}
 
@@ -18,13 +18,15 @@
             <!-- <a href="{{ site.baseurl }}/" title="Home"><strong>{{ site.title }}</strong></a> -->
             <span style="color: #505050;">{{ site.title }}</span>
             <small>{{ site.tagline }}</small>
+            
           </h3>
         </div>
       </div>
 
-      <div class="container content">
+      <div class="container content">     
         {{ content }}
       </div>
+     
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -46,6 +48,8 @@
         }, false);
       })(document);
     </script>
+
+  
 
     {% include userway.html %}
 

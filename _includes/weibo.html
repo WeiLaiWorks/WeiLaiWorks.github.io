@@ -1,0 +1,60 @@
+<!-- weibo login widget -->
+<!--没有回调函数的登录按钮-->                 
+<!-- <wb:login-button type="3,2" ></wb:login-button> -->
+ 
+<!--有回调函数的登录按钮-->      
+<wb:login-button type="3,2" onlogin="login" onlogout="logout" ></wb:login-button>
+
+<wb:topic uid="7281135833" column="y" border="n" width="821" height="1190" tags="未来工场留言板" language="zh_cn" version="base" refer="y" footbar="y" url="%23" filter="n" ></wb:topic> 
+<!-- <div id="wb_connect_btn" ></div> -->
+
+
+<script type="text/javascript">
+    (function(){
+    var url = "https://widget.weibo.com/distribution/comments.php?width=0&url=auto&dpc=1";
+    url = url.replace("url=auto", "url=" + encodeURIComponent(document.URL)); 
+    document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:100%"></iframe>');
+    })();
+</script>
+<script src="https://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    window.WBComment.init({
+        "id": "WBCommentFrame"
+    });
+</script>
+
+
+
+
+
+<script> 
+WB2.anyWhere(function (W) {
+    W.widget.connectButton({
+        id: "wb_connect_btn",
+        type: '3,2',
+        callback: {
+            login: function (o) { //登录后的回调函数
+                alert("login: " + o.screen_name)
+            },
+            logout: function () { //退出后的回调函数
+                alert('logout');
+            }
+        }
+    });
+});
+
+
+// WB2.anyWhere(function(W){
+//     W.widget.connectButton({
+//         id: "wb_connect_btn",	
+//         type:"3,2",
+//         callback : {
+//             login:function(o){	//登录后的回调函数
+//             },	
+//             logout:function(){	//退出后的回调函数
+//             }
+//         }
+//     });
+// });
+
+</script>
