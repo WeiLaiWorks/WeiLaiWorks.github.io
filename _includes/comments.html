@@ -1,0 +1,20 @@
+<div id="gitalk-container"></div>
+
+<script>
+
+(function() {
+const gitalk = new Gitalk({
+    clientID: 'c41cc9a21928a3505df3',
+    clientSecret: '007883f02c9758792692e42f87433d4b92f57c84',
+    repo: 'weilaiworks.github.io',
+    owner: 'weilaiworks',
+    admin: ['weilaiworks'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  });
+  
+  gitalk.render('gitalk-container');
+
+})();
+
+</script>
