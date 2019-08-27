@@ -16,29 +16,36 @@ permalink: /library/
     <details open>
         <summary>编程基础</summary>
         <p>
-        <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="blank">html,css,JavaScript</a></li>
-        </ul>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="blank">html</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="blank">css</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="blank">JavaScript</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django" target="blank">Django(Python)</a></li>
+            </ul>
         </p>
     </details>
     <details open>
         <summary>营养健身</summary>
         <p>
-        <ul>
-            <li><a href="https://slides.com/futureworks/deck/fullscreen" target="blank">营养基础</a></li>
-        </ul>
+            <ul>
+                <li><a href="https://slides.com/futureworks/deck/fullscreen" target="blank">营养基础</a></li>
+            </ul>
         </p>
     </details>
-    <details>
-        <summary>创业</summary>
+    <details open>
+        <summary>创新创业</summary>
         <p>
-            待更新...
+            <ul>
+                <li><a href="https://businessbook.readthedocs.io/zh/latest/" target="blank">创业基础</a></li>
+            </ul>
         </p>
     </details>
-    <details>
+    <details open>
         <summary>人文艺术</summary>
         <p>
-            待更新...
+            <ul>
+                <li><a href="https://photograpedia.readthedocs.io/zh/latest/" target="blank">摄影基础</a></li>
+            </ul>
         </p>
     </details>
 </div>
