@@ -16,9 +16,10 @@
         <div class="container">
           <h3 class="masthead-title">
             <!-- <a href="{{ site.baseurl }}/" title="Home"><strong>{{ site.title }}</strong></a> -->
+            <!-- <div><img src="{{ site.baseurl }}/public/F80.png" style="width: 35px; height: 35px" class="float-left"></div> -->
             <span style="color: #505050;">{{ site.title }}</span>
-            <small>{{ site.tagline }}</small>
-            
+            <!-- <a href="{{ site.baseurl }}/" title="Home">{{ site.title }} -->
+            <small class="text-muted">{{ site.tagline }}</small></a> 
           </h3>
         </div>
       </div>
@@ -50,10 +51,11 @@
     </script>
 
   
-
     {% include userway.html %}
 
     {% include weibo.html %}
+
+    {% include bootstrap.html %}
 
   </body>
 </html>
